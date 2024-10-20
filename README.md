@@ -8,12 +8,15 @@ To write a program to implement the the Logistic Regression Model to Predict the
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. Import the required packages and print the present data.
-2. Print the placement data and salary data.
-3. Find the null and duplicate values.
-4. Using logistic regression find the predicted values of accuracy , confusion matrices.
-5. Display the results.
-
+1. Load and Clean Data: Read the dataset, drop irrelevant columns, and check for null or duplicate values.
+   
+2. Encode Categorical Variables: Use LabelEncoder to convert categorical variables (e.g., gender, education background) into numerical form for modeling.
+   
+3. Split Data: Separate the features (x) and target variable (y), then split the data into training and testing sets.
+   
+4. Train Model: Train a logistic regression model using the training data and predict on the test data.
+   
+5. Evaluate Model: Calculate and print accuracy, confusion matrix, and classification report to assess model performance.
 ## Program:
 ```
 /*
@@ -68,6 +71,7 @@ from sklearn.metrics import confusion_matrix
 confusion = confusion_matrix(y_test,y_pred)
 print("\nConfusion Matrix:\n",confusion)
 
+from sklearn.metrics import classification_report
 cr=classification_report(y_test,y_pred)
 print("\nClassification Report:\n",cr)
 */
@@ -75,23 +79,7 @@ print("\nClassification Report:\n",cr)
 
 ## Output:
 
-![Screenshot 2024-09-16 091035](https://github.com/user-attachments/assets/db322afb-e612-45f6-a788-5d355b22b8d1)
-
-![Screenshot 2024-09-16 091052](https://github.com/user-attachments/assets/9e416096-933c-4b41-8906-b80d5b4bd4e6)
-
-![Screenshot 2024-09-16 091101](https://github.com/user-attachments/assets/c58b678f-4af8-4cc1-84f1-832f9b8effa6)
-
-![Screenshot 2024-09-16 091113](https://github.com/user-attachments/assets/19539c32-a6e2-41ea-847f-1e613a1d85ec)
-
-![Screenshot 2024-09-16 091124](https://github.com/user-attachments/assets/84055b33-54b2-4bc8-afb9-e86c92fff959)
-
-![Screenshot 2024-09-16 091133](https://github.com/user-attachments/assets/d77c6c1f-a1f4-4023-9af9-32890cf88a75)
-
-![Screenshot 2024-09-16 091139](https://github.com/user-attachments/assets/3a4d44f2-dcaf-45f3-8893-1156e1de4942)
-
-![Screenshot 2024-09-16 091153](https://github.com/user-attachments/assets/5ab1cc41-d69e-4720-93fe-35f146156214)
-
-
+![Screenshot 2024-10-20 085312](https://github.com/user-attachments/assets/0fde4080-5c8a-48ba-8c12-97913e043c30)
 
 ## Result:
 Thus the program to implement the the Logistic Regression Model to Predict the Placement Status of Student is written and verified using python programming.
